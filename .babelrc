@@ -3,7 +3,9 @@
         [
             "@babel/preset-env", //для компиляции не JS кода
             {
-                "modules": false
+                "modules": false,
+                "useBuiltIns": "entry",
+                "corejs": "3.6"  //библиотека с поллифилами
             }
         ],
         "@babel/preset-react"
